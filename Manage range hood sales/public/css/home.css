@@ -1,0 +1,193 @@
+
+/* Tổng thể */
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+color: #333;
+line-height: 1.6;
+margin: 0;
+padding: 0;
+}
+
+/* Tiêu đề đầu tiên */
+.first-title {
+display: flex;
+justify-content: center; /* Căn giữa toàn bộ nội dung trong .first-title */
+align-items: center;
+background-color: #333;
+color: white;
+position: relative; /* Để đặt logo vào góc trái */
+width: 100%;
+}
+
+/* Logo */
+.logo {
+position: absolute; /* Đặt logo vào góc trái */
+left: 20px; /* Khoảng cách từ góc trái */
+width: 10%;
+}
+
+.logo img {
+max-width: 60px;
+height: auto;
+border-radius: 10px;
+transition: transform 0.3s ease; /* Thêm hiệu ứng chuyển động */
+}
+
+.logo img:hover {
+transform: scale(1.1); /* Phóng to logo khi hover */
+}
+
+/* Menu liên kết */
+.list-menu {
+display: flex;
+justify-content: center; /* Căn giữa các liên kết menu */
+flex: 1; /* Chiếm không gian còn lại giữa logo và menu */
+position: relative; /* Để các liên kết không bị ảnh hưởng bởi logo */
+}
+
+.list-menu a {
+color: white;
+padding: 0 15px; /* Khoảng cách giữa các liên kết */
+text-decoration: none;
+font-size: 18px;
+display: inline-block; /* Đảm bảo liên kết không kéo dài ra ngoài */
+transition: color 0.3s ease, transform 0.3s ease; /* Thêm hiệu ứng chuyển động */
+}
+
+.list-menu a:hover {
+color: #ffcc00;
+transform: translateY(-2px); /* Di chuyển liên kết lên trên khi hover */
+}
+
+/* Container chính */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+padding: 80px 20px;
+text-align: center;
+background-color: white;
+margin: 20px auto;
+max-width: 1200px;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ sâu hơn */
+border-radius: 8px;
+transition: box-shadow 0.3s ease; /* Thêm hiệu ứng chuyển động */
+}
+
+.main-container:hover {
+box-shadow: 0 0 25px rgba(0, 0, 0, 0.3); /* Tăng cường bóng đổ khi hover */
+}
+
+/* Phần tử nội dung chính */
+h1 {
+color: #333;
+font-size: 2.5em; /* Tăng kích thước chữ cho tiêu đề */
+margin-bottom: 10px;
+transition: color 0.3s ease; /* Thêm hiệu ứng chuyển động */
+}
+
+p {
+color: #666;
+font-size: 1.2em; /* Tăng kích thước chữ cho đoạn văn */
+margin-top: 0;
+margin-bottom: 20px;
+}
+/* Container cho hình ảnh quảng cáo */
+/* Đặt CSS ở đây */
+.ad-images-container {
+    position: relative;
+    overflow: hidden;
+    max-height: 400px; /* Adjust as needed */
+    width: 100%; /* Full width of the column */
+    margin: 0 auto; /* Center the container */
+}
+
+.ad-image {
+    display: none; /* Initially hide all images */
+    width: 100%; /* Ensure images take full width of the container */
+    height: 400px; /* Fixed height to ensure uniformity */
+    object-fit: cover; /* Ensure images retain aspect ratio */
+}
+
+.ad-image.active {
+    display: block; /* Show the active image */
+}
+
+.ad-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.nav-button {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.nav-button:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.product-image {
+    width: 100%; /* Ensure images take full width of the card */
+    height: 200px; /* Fixed height to ensure uniformity */
+    object-fit: cover; /* Ensure images retain aspect ratio */
+}
+
+.categories-container, .promotions-container {
+    padding: 15px;
+    width: 20%;
+    border: 1px solid #dee2e6; /* Optional border */
+    border-radius: 5px; /* Optional rounded corners */
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    height: 400px; /* Fixed height */
+    overflow: hidden; /* Hide overflow */
+}
+
+/* Ensure equal height for columns */
+.row {
+    display: flex;
+}
+.btn{
+    margin: 0 auto;
+}
+.pagination .page-item .page-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    font-size: 16px; /* Chỉnh kích thước chữ */
+}
+
+.pagination .page-item .page-link svg {
+    width: 16px; /* Chỉnh kích thước mũi tên */
+    height: 16px;
+}
+
+.pagination .page-item {
+    margin: 0 5px; /* Khoảng cách giữa các nút phân trang */
+}
+
+.pagination .page-item.active .page-link {
+    background-color: #007bff; /* Màu cho trang hiện tại */
+    border-color: #007bff;
+}
+@media (max-width: 768px) {
+    .ad-images-container {
+        height: 200px; /* Chiều cao hình ảnh quảng cáo cho điện thoại */
+    }
+
+    .ad-image {
+        height: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều cao */
+    }
+}

@@ -1,0 +1,83 @@
+/* Tổng thể */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Màu nền chính của trang */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container chính */
+.container {
+    background-color: #ffffff; /* Màu nền của container chính */
+    padding: 20px; /* Padding cho container */
+    margin: 0 auto; /* Căn giữa container */
+    width: 100%; /* Chiếm toàn bộ chiều rộng màn hình */
+    max-width: 1200px; /* Giới hạn chiều rộng tối đa */
+    border: 2px solid #333; /* Thêm viền cho container */
+    border-radius: 8px; /* Bo góc để tạo sự mềm mại */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ */
+    box-sizing: border-box; /* Bao gồm padding và border trong kích thước tổng thể */
+}
+
+/* Tiêu đề */
+#title {
+    background-color: #333; /* Màu nền của tiêu đề */
+    color: black; /* Màu chữ tiêu đề */
+    padding: 15px 0; /* Padding cho tiêu đề */
+    margin: 0; /* Loại bỏ margin mặc định */
+    border-radius: 4px; /* Bo góc tiêu đề */
+}
+
+/* Danh sách nhóm */
+.list-group {
+    margin-top: 20px; /* Khoảng cách trên của danh sách nhóm */
+}
+
+.list-group-item {
+    background-color: #f4f4f4; /* Màu nền của các item trong danh sách */
+    border: 1px solid #ddd; /* Viền của các item trong danh sách */
+    padding: 10px; /* Padding cho các item */
+    margin-bottom: 10px; /* Khoảng cách dưới của các item */
+    border-radius: 4px; /* Bo góc các item */
+    display: flex;
+    justify-content: space-between; /* Căn giữa nội dung và các nút */
+    align-items: center; /* Căn giữa các nút */
+}
+
+/* Nút */
+.btn {
+    display: inline-block;
+    padding: 8px 16px; /* Padding cho các nút */
+    border-radius: 4px; /* Bo góc cho các nút */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    color: white; /* Màu chữ của các nút */
+    font-size: 14px; /* Kích thước chữ của các nút */
+    margin-left: 5px; /* Khoảng cách bên trái của các nút */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Màu nền của nút primary */
+    border: 1px solid #007bff; /* Viền của nút primary */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Màu nền khi hover */
+}
+
+.btn-warning {
+    background-color: #ffc107; /* Màu nền của nút warning */
+    border: 1px solid #ffc107; /* Viền của nút warning */
+}
+
+.btn-warning:hover {
+    background-color: #e0a800; /* Màu nền khi hover */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Màu nền của nút danger */
+    border: 1px solid #dc3545; /* Viền của nút danger */
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Màu nền khi hover */
+}

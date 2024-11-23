@@ -1,0 +1,29 @@
+FRAMEWORK CODEIGNITER 3
+-----------------------------------------------------
+tài khoản admin : admin/Travip123
+tài khoản nhân viên: giabao/giabao ; thaihieu/thaihieu
+-----------------------------------------------------
+---THÀNH CÔNG---
+Ngân hàng: NCB
+Số thẻ: 9704198526191432198
+Ngày phát hành:07/15
+Tên chủ thẻ:NGUYEN VAN A
+Mật khẩu OTP:123456
+/////////////////////////
+---Thẻ không đủ số dư---
+Ngân hàng: NCB
+Số thẻ: 9704195798459170488
+Tên chủ thẻ:NGUYEN VAN A
+Ngày phát hành:07/15
+/////////////////////////
+---Thẻ chưa kích hoạt---
+Ngân hàng: NCB
+Số thẻ: 9704192181368742
+Tên chủ thẻ:NGUYEN VAN A
+Ngày phát hành:07/15
+/////////////////////////
+---Thẻ bị hết hạn---
+Ngân hàng: NCB
+Số thẻ: 9704194841945513
+Tên chủ thẻ:NGUYEN VAN A
+Ngày phát hành:07/15
